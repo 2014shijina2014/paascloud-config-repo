@@ -1,3 +1,14 @@
+spring:
+  mvc:
+    date-format: yyyy-MM-dd HH:mm:ss
+  jackson:
+    joda-date-time-format: yyyy-MM-dd HH:mm:ss
+    date-format: yyyy-MM-dd HH:mm:ss
+  datasource:
+    url: jdbc:mysql://192.168.200.1:3306/paascloud_uac?characterEncoding=utf8&useSSL=false
+    user: root
+    password: root
+
 mybatis:
   type-aliases-package: com.paascloud.provider.model.domain
   mapper-locations: classpath:mapper/*.xml,classpath*:sdk/mapper/*.xml
