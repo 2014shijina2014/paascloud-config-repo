@@ -11,28 +11,28 @@ spring:
     user: root
     password: root
 
-liquibase:
-  change-log: classpath:liquibase/index.xml
-  user: root
-  password: root
-  url: jdbc:mysql://192.168.200.1:3306/paascloud_mdc?characterEncoding=utf8&useSSL=false
+# liquibase:
+#   change-log: classpath:liquibase/index.xml
+#   user: root
+#   password: root
+#   url: jdbc:mysql://192.168.200.1:3306/paascloud_mdc?characterEncoding=utf8&useSSL=false
 
-mybatis:
-  type-aliases-package: com.paascloud.provider.model.domain
-  mapper-locations: classpath:mapper/*.xml,classpath*:sdk/mapper/*.xml
-  configuration:
-    map-underscore-to-camel-case: true
+# mybatis:
+#   type-aliases-package: com.paascloud.provider.model.domain
+#   mapper-locations: classpath:mapper/*.xml,classpath*:sdk/mapper/*.xml
+#   configuration:
+#     map-underscore-to-camel-case: true
 
-mapper:
-  mappers: com.paascloud.core.mybatis.MyMapper
-  not-empty: false
-  identity: MYSQL
+# mapper:
+#   mappers: com.paascloud.core.mybatis.MyMapper
+#   not-empty: false
+#   identity: MYSQL
 
-pagehelper:
-  helperDialect: mysql
-  reasonable: true
-  supportMethodsArguments: true
-  params: count=countSql
+# pagehelper:
+#   helperDialect: mysql
+#   reasonable: true
+#   supportMethodsArguments: true
+#   params: count=countSql
 
 # security:
 #   oauth2:
