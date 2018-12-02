@@ -65,7 +65,7 @@ paascloud:
       reliableMessageProducer: true
       namesrvAddr: paascloud-mq-rocket:9876
       instanceName: paascloud-provider-test
-#      consumerGroup: CID_TEST
+      consumerGroup: CID_TEST
 #      producerGroup: PID_TEST
   oauth2:
     jwtSigningKey: paascloud
